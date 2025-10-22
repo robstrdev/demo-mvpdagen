@@ -12,6 +12,6 @@ spec:
       name: oidc
       env:
       - name: KEYVAULT_URL
-        value: kv-mvpdagen-demo 
+        value: https://kv-mvpdagen-demo.vault.azure.net
       - name: SECRET_NAME
         value: mvpdemo
