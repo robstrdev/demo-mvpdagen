@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: secret-peaker
+  namespace: test
+  #labels:
+  #  azure.workload.identity/use: "true"
+spec:
+  #serviceAccountName: workload-identity-sa
+  containers:
+    - image: ghcr.io/azure/azure-workload-identity/msal-go
+      name: oidc
+      env:
+      - name: KEYVAULT_URL
+        value: kv-mvpdagen-demo 
+      - name: SECRET_NAME
+        value: mvpdemo
