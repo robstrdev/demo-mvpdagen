@@ -3,8 +3,8 @@ kind: Pod
 metadata:
   name: secret-peaker
   namespace: test
-  labels:
-    azure.workload.identity/use: "true"
+#  labels:
+#    azure.workload.identity/use: "true"
 spec:
   serviceAccountName: workload-identity-sa
   containers:
